@@ -14,4 +14,7 @@ export class User {
 
   @Column() // Column for the user's hashed password
   password: string;
+
+  @Column({ default: 'user' }) // Set default role to 'user'
+  role: string; // Define role as a string property
 }

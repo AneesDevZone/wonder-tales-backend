@@ -12,4 +12,5 @@ export class CreateUserDto {
   @IsString()
   @MinLength(6) // Minimum password length
   password: string; // User's password
+  role?: string;
 }
